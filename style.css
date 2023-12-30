@@ -3,6 +3,11 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #f4f4f4;
+	
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -84,7 +89,7 @@ header {
 	color: #ff0000;
 	font-size: 18px;
 	border-radius: 5px;
-	width: 100%;
+	width: auto;
 	height: 40px;
 	border: 1px solid #ff0000;
 	position: relative;
@@ -197,11 +202,12 @@ button {
 
 ul {
 	list-style-type: square;
-	padding: 0;
+	padding: 10px;
 }
 
 li {
 	margin-bottom: 0.5em;
+	
 }
 
 .banner {
@@ -258,22 +264,21 @@ h3 {
 }
 
 .about-us  {
-  width: 100%;
- height: auto;
-  color: #fff;
-	text-transform: uppercase;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-	text-align: center;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background-color: #3d348b;
-  box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+	text-decoration: none;
+	color: yellow;
+	font-size: 18px;
+	border-radius: 5px;
+	width: auto;
+	height: 40px;
+	border: 1px solid #ff0000;
+	position: relative;
+	transition: 0.3s;
+	overflow: hidden;
+	background-color: firebrick;
 }
 .about-us :active {
   box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
@@ -293,7 +298,8 @@ summary {
   line-height: 1;
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  padding: 10px;
+  font-size: 15px;
   border-radius: 0px;
   width:auto;
   height: 40px;
@@ -306,4 +312,22 @@ summary {
 
 .form:hover {
   box-shadow: 0 0 rgba(0, 0, 0, .3);
+}
+
+footer {
+	width: 100%;
+	position: relative;
+	bottom: 0px;
+	z-index: 1;
+}
+
+footer p {
+	
+	color: yellow;
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+	float: right;
+	font-size: 12px;
+	z-index: 1;
 }
